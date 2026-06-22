@@ -24,7 +24,7 @@ function calculate(a, b, op) {
 
 function CalculatorInner() {
   const { styles } = useTheme();
-  const [current, setCurrent] = useState("0");
+  const [current, setCurrent] = useState("399981");
   const [previous, setPrevious] = useState(null);
   const [operator, setOperator] = useState(null);
   const [overwrite, setOverwrite] = useState(false);
