@@ -24,14 +24,14 @@ export default function Keypad({ onPress }) {
 
   const keyClass = (type) => {
     const base =
-      "rounded-md font-bold h-[60px] transition active:translate-y-[2px] active:shadow-none flex items-center justify-center";
-    if (type === "num") return `${base} text-[32px] ${styles.numKey}`;
-    return `${base} text-[20px] uppercase ${styles.fnKey}`;
+      "rounded-md font-bold h-[70px] transition active:translate-y-[2px] active:shadow-none flex items-center justify-center";
+    if (type === "num") return `${base} text-[36px] ${styles.numKey}`;
+    return `${base} text-[22px] uppercase ${styles.fnKey}`;
   };
 
   return (
-    <div className={`${styles.keypadBg} rounded-lg p-5`}>
-      <div className="grid grid-cols-4 gap-3 mb-3">
+    <div className={`${styles.keypadBg} rounded-lg p-6`}>
+      <div className="grid grid-cols-4 gap-4 mb-4">
         {keys.map((k) => (
           <button
             key={k.label}
@@ -42,16 +42,16 @@ export default function Keypad({ onPress }) {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-4">
         <button
           onClick={() => onPress("RESET")}
-          className={`rounded-md font-bold text-[20px] uppercase h-[60px] transition active:translate-y-[2px] active:shadow-none ${styles.fnKey}`}
+          className={`rounded-md font-bold text-[22px] uppercase h-[70px] transition active:translate-y-[2px] active:shadow-none ${styles.fnKey}`}
         >
           Reset
         </button>
         <button
           onClick={() => onPress("=")}
-          className={`rounded-md font-bold text-[24px] h-[60px] transition active:translate-y-[2px] active:shadow-none ${styles.accentKey}`}
+          className={`rounded-md font-bold text-[26px] h-[70px] transition active:translate-y-[2px] active:shadow-none ${styles.accentKey}`}
         >
           =
         </button>
