@@ -100,17 +100,16 @@ function CalculatorInner() {
   };
 
   return (
-    <div className={`min-h-screen ${styles.bg} transition-colors duration-300`}>
-      <div className="max-w-[540px] mx-auto px-6 py-8 md:py-16">
-        <Header />
-        <Display value={current} />
-        <Keypad onPress={handlePress} />
-        <p className={`text-center text-xs mt-6 opacity-60 ${styles.text}`}>
-          Frontend Mentor • Calculator App
-        </p>
-      </div>
+  <div
+    className={`min-h-screen ${styles.bg} transition-colors duration-300 flex items-center justify-center`}
+  >
+    <div className="w-full max-w-[540px] px-6 py-8 md:py-12">
+      <Header />
+      <Display value={current} />
+      <Keypad onPress={handlePress} />
     </div>
-  );
+  </div>
+);
 }
 
 export default function App() {

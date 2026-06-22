@@ -24,13 +24,14 @@ export default function Keypad({ onPress }) {
 
   const keyClass = (type) => {
     const base =
-      "rounded-md font-bold text-2xl md:text-3xl py-3 transition active:translate-y-[2px] active:shadow-none";
-    if (type === "num") return `${base} ${styles.numKey}`;
-    return `${base} text-lg md:text-xl uppercase ${styles.fnKey}`;
+      "rounded-lg font-bold py-4 md:py-5 transition active:translate-y-[2px] active:shadow-none";
+    if (type === "num")
+      return `${base} text-3xl md:text-4xl ${styles.numKey}`;
+    return `${base} text-xl md:text-2xl uppercase ${styles.fnKey}`;
   };
 
   return (
-    <div className={`${styles.keypadBg} rounded-lg p-4 md:p-6`}>
+    <div className={`${styles.keypadBg} rounded-xl p-5 md:p-8`}>
       <div className="grid grid-cols-4 gap-3 md:gap-6 mb-3 md:mb-6">
         {keys.map((k) => (
           <button
@@ -45,13 +46,13 @@ export default function Keypad({ onPress }) {
       <div className="grid grid-cols-2 gap-3 md:gap-6">
         <button
           onClick={() => onPress("RESET")}
-          className={`rounded-md font-bold text-lg md:text-xl uppercase py-4 transition active:translate-y-[2px] active:shadow-none ${styles.fnKey}`}
+          className={`rounded-lg font-bold text-xl md:text-2xl uppercase py-4 md:py-5 transition active:translate-y-[2px] active:shadow-none ${styles.fnKey}`}
         >
           Reset
         </button>
         <button
           onClick={() => onPress("=")}
-          className={`rounded-md font-bold text-lg md:text-xl py-4 transition active:translate-y-[2px] active:shadow-none ${styles.accentKey}`}
+          className={`rounded-lg font-bold text-xl md:text-2xl py-4 md:py-5 transition active:translate-y-[2px] active:shadow-none ${styles.accentKey}`}
         >
           =
         </button>

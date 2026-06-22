@@ -49,11 +49,10 @@ const themes = {
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
-    const saved = localStorage.getItem("calc-theme");
-    if (saved) return Number(saved);
-    if (window.matchMedia?.("(prefers-color-scheme: light)").matches) return 2;
-    return 1;
-  });
+  const saved = localStorage.getItem("calc-theme");
+  if (saved) return Number(saved);
+  return 1; // Always default to Theme 1 (dark navy)
+});
 
   useEffect(() => {
     localStorage.setItem("calc-theme", String(theme));
