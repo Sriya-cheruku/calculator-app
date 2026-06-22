@@ -103,7 +103,7 @@ function CalculatorInner() {
   <div
     className={`min-h-screen ${styles.bg} transition-colors duration-300 flex items-center justify-center py-8`}
   >
-    <div className="w-full max-w-[540px] px-6">
+   <div className="w-full max-w-[560px] px-6">
       <Header />
       <Display value={current} />
       <Keypad onPress={handlePress} />
