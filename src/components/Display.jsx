@@ -17,7 +17,7 @@ export default function Display({ value }) {
   const { styles } = useTheme();
   return (
     <div
-className={`${styles.screen} rounded-lg px-8 py-8 mb-6 flex justify-end items-center h-[130px]`}    >
+className={`${styles.screen} rounded-lg px-8 py-8 mb-6 flex justify-end items-center h-[150px]`}    >
       <span className="text-[44px] font-bold truncate leading-none">
         {formatNumber(value)}
       </span>
