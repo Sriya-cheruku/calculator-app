@@ -101,7 +101,7 @@ function CalculatorInner() {
 
   return (
     <div className={`min-h-screen ${styles.bg} transition-colors duration-300`}>
-      <div className="max-w-[540px] mx-auto px-6 py-8 md:py-16">
+      <div className="max-w-[540px] mx-auto px-6 pt-16 pb-8 md:pt-24 md:pb-16">
         <Header />
         <Display value={current} />
         <Keypad onPress={handlePress} />
