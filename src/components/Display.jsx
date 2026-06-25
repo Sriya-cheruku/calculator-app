@@ -1,12 +1,9 @@
 import { useTheme } from "../context/ThemeContext";
 
 function formatNumber(value) {
-  if (value === null || value === undefined || value === "") return "0";
+  if (value === "" || value === "-") return value;
   if (value === "Error") return value;
-  if (value === "-") return "-";
-
-  const str = String(value);
-  const [intPart, decPart] = str.split(".");
+  const [intPart, decPart] = String(value).split(".");
   const sign = intPart.startsWith("-") ? "-" : "";
   const abs = sign ? intPart.slice(1) : intPart;
   const withCommas = abs.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -17,9 +14,9 @@ export default function Display({ value }) {
   const { styles } = useTheme();
   return (
     <div
-      className={`${styles.screen} rounded-lg px-7 py-6 mb-6 flex justify-end items-center h-[128px]`}
+      className={`${styles.screen} rounded-lg px-6 py-8 mb-6 flex justify-end items-center min-h-[88px] md:min-h-[128px]`}
     >
-      <span className="text-[40px] font-bold truncate leading-none">
+      <span className="text-4xl md:text-5xl font-bold truncate">
         {formatNumber(value)}
       </span>
     </div>

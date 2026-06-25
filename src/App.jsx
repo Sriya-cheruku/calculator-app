@@ -24,7 +24,7 @@ function calculate(a, b, op) {
 
 function CalculatorInner() {
   const { styles } = useTheme();
-  const [current, setCurrent] = useState("399981");
+  const [current, setCurrent] = useState("0");
   const [previous, setPrevious] = useState(null);
   const [operator, setOperator] = useState(null);
   const [overwrite, setOverwrite] = useState(false);
@@ -99,17 +99,18 @@ function CalculatorInner() {
     }
   };
 
- return (
-  <div
-    className={`min-h-screen ${styles.bg} transition-colors duration-300 flex items-center justify-center py-8`}
-  >
-   <div className="w-full max-w-[610px] px-6">
-      <Header />
-      <Display value={current} />
-      <Keypad onPress={handlePress} />
+  return (
+    <div className={`min-h-screen ${styles.bg} transition-colors duration-300`}>
+      <div className="max-w-[540px] mx-auto px-6 py-8 md:py-16">
+        <Header />
+        <Display value={current} />
+        <Keypad onPress={handlePress} />
+        <p className={`text-center text-xs mt-6 opacity-60 ${styles.text}`}>
+          Frontend Mentor • Calculator App
+        </p>
+      </div>
     </div>
-  </div>
-);
+  );
 }
 
 export default function App() {
