@@ -13,7 +13,7 @@
   --color-t1-keyShadow: hsl(224, 28%, 35%);
   --color-t1-accent: hsl(6, 63%, 50%);
   --color-t1-accentShadow: hsl(6, 70%, 34%);
-  --color-t1-numBg: hsl(0, 0%, 90%);
+  --color-t1-numBg: hsl(30, 25%, 89%);
   --color-t1-numShadow: hsl(28, 16%, 65%);
   --color-t1-numText: hsl(221, 14%, 31%);
   --color-t1-text: hsl(0, 100%, 100%);
@@ -26,7 +26,7 @@
   --color-t2-keyShadow: hsl(185, 58%, 25%);
   --color-t2-accent: hsl(25, 98%, 40%);
   --color-t2-accentShadow: hsl(25, 99%, 27%);
-  --color-t2-numBg: hsl(0, 0%, 90%);
+--color-t2-numBg: hsl(45, 7%, 89%);
   --color-t2-numShadow: hsl(35, 11%, 61%);
   --color-t2-numText: hsl(60, 10%, 19%);
   --color-t2-text: hsl(0, 100%, 100%);

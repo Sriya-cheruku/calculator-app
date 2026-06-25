@@ -10,11 +10,11 @@ const themes = {
     toggleBg: "bg-t1-toggleBg",
     keypadBg: "bg-t1-toggleBg",
     numKey:
-      "bg-t1-numBg text-t1-numText shadow-[inset_0_-4px_0_0] shadow-t1-numShadow hover:brightness-110",
+      "bg-t1-numBg text-t1-numText shadow-[inset_0_-6px_0_0] shadow-t1-numShadow hover:brightness-110",
     fnKey:
-      "bg-t1-keyBg text-t1-text shadow-[inset_0_-4px_0_0] shadow-t1-keyShadow hover:brightness-110",
+      "bg-t1-keyBg text-t1-text shadow-[inset_0_-6px_0_0] shadow-t1-keyShadow hover:brightness-110",
     accentKey:
-      "bg-t1-accent text-t1-text shadow-[inset_0_-4px_0_0] shadow-t1-accentShadow hover:brightness-110",
+      "bg-t1-accent text-t1-text shadow-[inset_0_-6px_0_0] shadow-t1-accentShadow hover:brightness-110",
     toggleThumb: "bg-t1-accent",
   },
   2: {
@@ -24,11 +24,11 @@ const themes = {
     toggleBg: "bg-t2-toggleBg",
     keypadBg: "bg-t2-toggleBg",
     numKey:
-      "bg-t2-numBg text-t2-numText shadow-[inset_0_-4px_0_0] shadow-t2-numShadow hover:brightness-105",
+      "bg-t2-numBg text-t2-numText shadow-[inset_0_-6px_0_0] shadow-t2-numShadow hover:brightness-105",
     fnKey:
-      "bg-t2-keyBg text-t2-text shadow-[inset_0_-4px_0_0] shadow-t2-keyShadow hover:brightness-110",
+      "bg-t2-keyBg text-t2-text shadow-[inset_0_-6px_0_0] shadow-t2-keyShadow hover:brightness-110",
     accentKey:
-      "bg-t2-accent text-t2-text shadow-[inset_0_-4px_0_0] shadow-t2-accentShadow hover:brightness-110",
+      "bg-t2-accent text-t2-text shadow-[inset_0_-6px_0_0] shadow-t2-accentShadow hover:brightness-110",
     toggleThumb: "bg-t2-accent",
   },
   3: {
@@ -38,11 +38,11 @@ const themes = {
     toggleBg: "bg-t3-toggleBg",
     keypadBg: "bg-t3-toggleBg",
     numKey:
-      "bg-t3-numBg text-t3-numText shadow-[inset_0_-4px_0_0] shadow-t3-numShadow hover:brightness-125",
+      "bg-t3-numBg text-t3-numText shadow-[inset_0_-6px_0_0] shadow-t3-numShadow hover:brightness-125",
     fnKey:
-      "bg-t3-keyBg text-t3-text shadow-[inset_0_-4px_0_0] shadow-t3-keyShadow hover:brightness-125",
+      "bg-t3-keyBg text-t3-text shadow-[inset_0_-6px_0_0] shadow-t3-keyShadow hover:brightness-125",
     accentKey:
-      "bg-t3-accent text-t3-equalsText shadow-[inset_0_-4px_0_0] shadow-t3-accentShadow hover:brightness-110",
+      "bg-t3-accent text-t3-equalsText shadow-[inset_0_-6px_0_0] shadow-t3-accentShadow hover:brightness-110",
     toggleThumb: "bg-t3-accent",
   },
 };
